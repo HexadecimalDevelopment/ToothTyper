@@ -1,4 +1,6 @@
 # ToothTyper
+# Voice-to-text for Patterson Eaglesoft perio charting
+#
 # Copyright (c) 2026 Hunt Burke (Hexadecimal Development)
 # Licensed under the GPL 3.0
 
