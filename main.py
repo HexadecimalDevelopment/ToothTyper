@@ -39,11 +39,12 @@ class GUI(QMainWindow):
         self.stop = threading.Event()
 
         # Variables for status sound
-        self.ding = pygame.mixer.Sound('ding.mp3')  # TO-DO: Use abspath
+        self.ding = pygame.mixer.Sound(os.path.abspath('audio/ding.mp3'))
 
+        # TO-DO: Update icon and window header
         super().__init__()
         loader = QUiLoader()
-        self.ui = loader.load('mainwindow.ui', None)  # TO-DO: Move .ui files to Qt directory and use abspath
+        self.ui = loader.load(os.path.abspath('Qt/mainwindow.ui'), None)
         self.setCentralWidget(self.ui)
         self.ui.button.clicked.connect(self.switch)
 
