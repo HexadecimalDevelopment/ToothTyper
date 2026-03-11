@@ -17,6 +17,7 @@ from word2number import w2n
 from PySide6 import QtWidgets
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QMainWindow
+from PySide6.QtGui import QIcon
 
 # Hide support prompt, import pygame, and init mixer
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
@@ -46,6 +47,12 @@ class GUI(QMainWindow):
         loader = QUiLoader()
         self.ui = loader.load(os.path.abspath('Qt/mainwindow.ui'), None)
         self.setCentralWidget(self.ui)
+
+        # Window title and icon
+        self.setWindowTitle("ToothTyper")
+        self.setWindowIcon(QIcon(os.path.abspath("icons/icon.ico")))
+
+        # Button connections
         self.ui.button.clicked.connect(self.switch)
 
     def switch(self):
