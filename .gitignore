@@ -2,3 +2,6 @@
 venv/
 venv_win/
 __pycache__/
+
+# Build
+binaries/
