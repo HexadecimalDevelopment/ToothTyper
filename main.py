@@ -147,7 +147,12 @@ class GUI(QMainWindow):
 
     def closeEvent(self, event):
         self.stop.set()  # Send stop to listener
-        self.listener.join(timeout=0.1)  # Don't wait for it to close
+
+        try:
+            self.listener.join(timeout=0.1)  # Don't wait for it to close
+        except RuntimeError:
+            pass  # Fails silently if the thread is not started
+
         event.accept()  # Close the window
 
 
