@@ -4,6 +4,7 @@ if [[ ! -d binaries ]] ; then
     mkdir binaries
 fi
 
+cp -R audio binaries/
 cp -R icons binaries/
 cp -R Qt binaries/
 

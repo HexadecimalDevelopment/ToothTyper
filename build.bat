@@ -6,6 +6,7 @@ IF NOT EXIST "binaries" (
     mkdir binaries
 )
 
+xcopy /E /I audio binaries\audio
 xcopy /E /I icons binaries\icons
 xcopy /E /I Qt binaries\Qt
 
