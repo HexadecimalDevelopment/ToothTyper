@@ -1,3 +1,5 @@
+@echo off
+
 echo Building executables...
 
 IF NOT EXIST "binaries" (
