@@ -101,7 +101,7 @@ class GUI(QMainWindow):
                     text = text.split()  # Split text into list
 
                     # Uncomment this to print text list for debugging
-                    print(text)
+                    #print(text)
 
                     if not self.stop.is_set():
 
