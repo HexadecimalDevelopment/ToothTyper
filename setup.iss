@@ -34,7 +34,7 @@ InfoBeforeFile=Z:\Code\Projects\ToothTyper\GPL.txt
 ; Uncomment the following line to run in non administrative install mode (install for current user only).
 ;PrivilegesRequired=lowest
 OutputDir=Z:\Code\Projects\ToothTyper\binaries\installer
-OutputBaseFilename=toothtyper-1.0.0-setup
+OutputBaseFilename=toothtyper-setup
 SetupIconFile=Z:\Code\Projects\ToothTyper\binaries\icons\icon.ico
 SolidCompression=yes
 WizardStyle=modern dynamic
